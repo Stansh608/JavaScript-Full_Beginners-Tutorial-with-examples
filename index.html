@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+<body>
+    <h1>Javascript code basics</h1>
+
+    <!--  Changing the Paragraph content--> 
+
+    <p id="para1">This content will be changed</p>
+    <input type="button" value="Change" id="btn1" onclick="Change()" >
+    <br>
+
+    <!--  changing the image on hover--> 
+
+    <img id="img01" src="Classic_car1.PNG" alt="Classic" height=300 width=500  onmouseover="ChangeOnOver()" onmouseout="ChangeOnOut()">
+    <br>
+
+    <!--  Validate Password--> 
+
+    <input type="text" id="input01">
+    <input type="submit" value="Submit" onclick="CheckInt()">
+    <br><p id="passtext"></p>
+    <br>
+
+    <!--  adding two numbers using html form--> 
+
+    <form name="form_add" action="">
+        Number 1: <input type="text" name="num1"><br>
+        Number 2: <input type="text" name="num2"><br>
+        <input type="button" value="Total" onclick="add()">
+        : <input type="text" name="res">
+    </form><br>
+    
+    <!--  display time--> 
+
+    <button onclick='document.getElementById("ptime").innerHTML=Date();'>Display
+    Time</button>
+    <p id="ptime"></p>
+   
+    <!--  using onchange--> 
+    <input type="text" id="onchange" onchange="checkLength()">
+    
+    <!--  using onkeydown--> 
+
+    <input type="text" id="onchange1" onkeydown="checkLength2()">
+   
+    <!--  using onkeypress--> 
+
+   <input type="text" id="onchange2" onkeydown="checkLength3()">
+   
+   <!-- Testing the try catch block -->
+   <p id="demo1"></p>
+
+   <!--Validating inputs using try throw catch-->
+   <h4>Input a number between 1 and 5</h4>
+   <input type="text" id="valid_input"> <p id="messag"></p>
+   <br><button onclick="myFunction()">Validate input</button>
+
+
+
+   
+   
+    <!--  script declared here--> 
+    <script src="index.js">      
+    </script>
+
+
+</body>
+</html>
